@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <style>
+    .context-link {
+        color: black;
+        transition: color 0.2s;
+    }
+    .context-link.primary:hover {
+        color: #0d6efd;
+    }
+    .context-link.success:hover {
+        color: #198754;
+    }
+    .context-link.info:hover {
+        color: #0dcaf0;
+    }
+    .context-link.warning:hover {
+        color: #ffc107;
+    }
+    .context-link.danger:hover {
+        color: #dc3545;
+    }
+</style>
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main>
+            <h1>màu sắc theo link ngữ cảnh</h1>
+            <p>di chuột qua các liên kết để thấy màu sắc thay đổi theo ngữ cảnh:</p>
+            <ul>
+                <li><a href="#" class="context-link primary">Liên kết chính</a></li>
+                <li><a href="#" class="context-link success">Liên kết thành công</a></li>
+                <li><a href="#" class="context-link info">Liên kết thông tin</a></li>
+                <li><a href="#" class="context-link warning">Liên kết cảnh báo</a></li>
+                <li><a href="#" class="context-link danger">Liên kết nguy hiểm</a></li>
+            </ul>
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
