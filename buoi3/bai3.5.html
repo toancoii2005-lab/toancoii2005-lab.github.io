@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main>
+            <div class="container bg-white p-4 rounded shadow-sm" style="max-width: 600px;">
+    <h3 class="mb-2">Xác thực biểu mẫu</h3>
+    <p class="text-muted small mb-4">
+      Ví dụ bạn gửi biểu mẫu nhưng chưa điền hết thông tin thì sẽ nhận được thông báo như bên dưới.
+    </p>
+
+    <!-- Thêm class was-validated để hiển thị trạng thái đã xác thực/lỗi -->
+    <form class="was-validated" novalidate>
+      <!-- Tên người dùng -->
+      <div class="mb-3">
+        <label for="username" class="form-label fw-bold">Tên người dùng:</label>
+        <input type="text" class="form-control is-invalid" id="username" placeholder="Nhập tên người dùng" required>
+        <div class="invalid-feedback">Điền đầy đủ thông tin.</div>
+      </div>
+
+      <!-- Mật khẩu -->
+      <div class="mb-3">
+        <label for="password" class="form-label fw-bold">Mật khẩu:</label>
+        <input type="password" class="form-control is-invalid" id="password" placeholder="Enter password" required>
+        <div class="invalid-feedback">Điền đầy đủ thông tin.</div>
+      </div>
+
+      <!-- Đồng ý điều khoản -->
+      <div class="form-check mb-3">
+        <input class="form-check-input is-invalid" type="checkbox" id="agree" required>
+        <label class="form-check-label" for="agree">
+          Đồng ý
+        </label>
+      </div>
+
+      <!-- Nút Đăng nhập -->
+      <button type="submit" class="btn btn-primary">Đăng nhập</button>
+    </form>
+  </div>
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
