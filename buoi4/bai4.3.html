@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 4.3 - Thiết kế thanh điều hướng</title>
+  <!-- Nhúng Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <div class="container mt-4">
+    <!-- ================= BÀI 4.3 A ================= -->
+    <h4 class="mb-3 text-primary">a,</h4>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border rounded mb-5">
+      <div class="container-fluid">
+        <!-- Logo bên trái -->
+        <a class="navbar-brand fw-bold" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCauA">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCauA">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-dark" href="#">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Giới thiệu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">
+                Sản phẩm
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Sản phẩm 1</a></li>
+                <li><a class="dropdown-item" href="#">Sản phẩm 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Liên hệ</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Tìm kiếm...">
+            <button class="btn btn-dark" type="submit">Tìm</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= BÀI 4.3 B ================= -->
+    <h4 class="mb-3 text-primary">b,</h4>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+      <div class="container-fluid">
+        <!-- Logo S -->
+        <a class="navbar-brand fw-bold fs-3 text-white px-2 border" href="#">S</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCauB">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCauB">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">
+                <i class="bi bi-phone-fill me-1"></i> Điện thoại
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">iPhone</a></li>
+                <li><a class="dropdown-item" href="#">Samsung</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">
+                <i class="bi bi-laptop me-1"></i> Laptop
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">MacBook</a></li>
+                <li><a class="dropdown-item" href="#">Dell</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">
+                <i class="bi bi-display me-1"></i> PC, Màn hình
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Máy tính bộ</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">
+                <i class="bi bi-newspaper me-1"></i> Tin tức công nghệ
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Bài viết mới</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Khung tìm kiếm & Icon -->
+          <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+            <div class="input-group">
+              <input type="text" class="form-control form-control-sm" placeholder="Bạn cần tìm gì?">
+              <button class="btn btn-outline-light btn-sm" type="button"><i class="bi bi-search"></i></button>
+            </div>
+            <a href="#" class="text-white fs-5"><i class="bi bi-person"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-cart"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
